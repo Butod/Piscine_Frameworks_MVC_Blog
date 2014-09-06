@@ -86,7 +86,7 @@ class User extends AppModel {
 				'last' => true,
 			),
 			'roleInList' => array(
-				'rule' => array('inList', array('admin','author','user'), true),
+				'rule' => array('inList', array('admin','author','user')),
 				'message' => 'Le choix ne correspond pas à la lsite.'
 			),
 		),

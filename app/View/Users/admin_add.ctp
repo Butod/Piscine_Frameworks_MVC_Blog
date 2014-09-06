@@ -9,6 +9,7 @@
 		echo $this->Form->input('lastname');
 		echo $this->Form->input('birthdate');
 		echo $this->Form->input('email');
+		echo $this->Form->input('role', array('type' => 'select','options' => array('admin' => 'Administrateur','author' => 'Auteur','user' => 'Utilisateur')));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

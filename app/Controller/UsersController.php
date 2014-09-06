@@ -57,7 +57,6 @@ class UsersController extends AppController {
 	{
 		if ($this->request->is('post')) {
 			$this->User->create();
-			$this->request->data['User']['role'] = 'user';
 			if ($this->User->save($this->request->data)) {
 				$this->Session->setFlash(__('L\'utilisateur a été enregistrer.'));
 				return $this->redirect(array('action' => 'index'));
